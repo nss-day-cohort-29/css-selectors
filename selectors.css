@@ -1,0 +1,61 @@
+/* The header element should have a 1px, goldenrod border. */
+header {
+  border: 1px solid goldenrod;
+}
+/* Convert the ul in the navigation element into a series of horizontal links with # as the href value, without bullets, and have some space between them horizontally. */
+header ul {
+  list-style-type: none;
+}
+
+header li {
+  display: inline;
+  padding: 5px;
+}
+/* Ensure that the navigation is semantically marked as such (i.e. wrap it in the correct HTML tag). */
+/* Any text in an element with class "disabled" should be colored grey, unless it is inside an anchor tag. If inside an anchor, it should be colored purple. */
+.disabled {
+  color: gray;
+}
+
+a .disabled, a.disabled {
+  color: purple;
+}
+
+/* Any text inside an element with a class of "active" should be colored yellow. */
+.active {
+  color: yellow;
+}
+/* Section elements should be contained within an article element. */
+/* There are two missing closing tags in this document. Make sure you add them back in. */
+
+/* Make the "I'm red" text colored red. */
+.parent > div > div {
+  color: red;
+}
+/* Make the "I'm blue" text colored blue. */
+.parent > div > h4 + div {
+  color: blue;
+}
+/* The sibling h4 of the red element should have a background color of red. */
+.parent > div > div + h4 {
+  background-color: red;
+}
+/* The sibling h4 of the blue element should have background color of blue. */
+.parent > div > h4 + div + h4{
+  background-color: blue;
+}
+/* Any h4 that is a direct child of grandparent should have a 1px border with rounded corners. */
+.grandparent > h4 {
+  border: 1px solid;
+  border-radius: 5px;
+}
+/* Elements with a class of promo should have bold text that is also colored gold. */
+.promo, .promo > .disabled {
+  font-weight: bold;
+  color: gold;
+}
+/* Without adding any other attributes to the input fields in the footer, write a CSS selector that makes any text input field have a height of 25px. */
+
+footer input {
+  height: 25px;
+}
